@@ -1,0 +1,11 @@
+services:
+  supplier-api:
+    build: ./supplier-api
+    ports: ["5000:5000"]
+    restart: unless-stopped
+
+  inventory-api:
+    build: ./inventory-api
+    ports: ["4000:4000"]
+    restart: unless-stopped
+
